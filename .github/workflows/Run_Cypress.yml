@@ -19,9 +19,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name : Install Dependencies
+
+      - name: Change root path to test directory  
+        run : |
+          echo ls
+          cd ./test
+
+      - name: Install Dependencies
         run : npm install --force
         
       - name: Cypress run
