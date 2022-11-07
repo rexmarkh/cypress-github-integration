@@ -20,13 +20,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Change root path to test directory  
-        run : |
-          echo ls
-          cd ./test
-
       - name: Install Dependencies
+        working-directory: ./test
         run : npm install --force
         
       - name: Cypress run
+        working-directory: ./test
         uses: cypress-io/github-action@v4
