@@ -1,4 +1,4 @@
-name: Using Cypress GH Action
+name: Using Cypress Github Action
 
 on:
   push:
