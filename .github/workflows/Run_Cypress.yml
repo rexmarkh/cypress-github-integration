@@ -28,6 +28,6 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           working-directory: ./test
-          command: npm run test && echo "$GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY 
+          command: npm run test
       - name: Generate list using Markdown
-        run:  echo "$SUMMARY_ENV_VAR" >> $GITHUB_STEP_SUMMARY 
+        run:  echo "$GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY 
