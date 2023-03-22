@@ -29,12 +29,23 @@
     "headless": "npm run cy run -- -q",
     "home": "npm run cy run -- --spec specs/homePageSpec.js",
     "pretty": "standard --fix",
-    "ci": "npm run cy run -- -q"
-  },
-  "devDependencies": {
+    "ci": "npm run cy run -- -q",
+    "report": "node cypress/cucumber-html-report.js"
+
   },
   "dependencies": {
     "cypress": "^8.5.0",
+    "multiple-cucumber-html-reporter": "^3.0.1",
     "standard": "^16.0.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/integration",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumberreport",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }

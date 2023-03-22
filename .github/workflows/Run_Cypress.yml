@@ -31,9 +31,8 @@ jobs:
         with:
           working-directory: ./test
           command: npm run test |& tee cypress-logs.txt
-          
-      - run : ls && cd test && ls 
-      - run : cat test/cypress-logs.txt
+          run: ls && cat cypress-logs.txt
+
       - name: Generate list using Markdown
         run: cd ./test/reports && ls
 
