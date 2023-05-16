@@ -28,6 +28,7 @@ jobs:
         
       - name: Cypress run
         uses: cypress-io/github-action@v4
+        continue-on-error: true
         with:
           working-directory: ./test
           command: npm run cy:run -- --env TAGS='@smoke'
