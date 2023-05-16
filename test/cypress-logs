@@ -1,0 +1,33 @@
+
+> cypress-example@1.0.0 test
+> npm run cy run -- -q --headed
+
+
+> cypress-example@1.0.0 cy
+> cypress "run" "-q" "--headed"
+
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+
+  Home Page
+    ✓ should display 7 posts per page (1413ms)
+    - should open social media link in new window
+    - should find an older post by loading more
+
+
+  1 passing (2s)
+  2 pending
+
+
+
+  Search
+    ✓ should return search results (1961ms)
+    ✓ unfound search term should return no results message (2164ms)
+
+
+  2 passing (4s)
+
