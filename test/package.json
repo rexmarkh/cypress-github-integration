@@ -23,6 +23,7 @@
     ]
   },
   "scripts": {
+    "cy:run": "cypress run --env TAGS",
     "cy": "cypress",
     "open": "npm run cy open",
     "test": "npm run cy run -- -q --headed",
