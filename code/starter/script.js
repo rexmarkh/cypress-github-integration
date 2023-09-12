@@ -13,10 +13,14 @@ console.log(num1);
 // arrow functions
 const sayHello = name => console.log("Hello", name);
 sayHello("Ketan")
-const greetings = (name, greet) => console.log("Hello", name, ", Good", greet)
-greetings("Ketan", "Afternoon!")
+const greeting = (name, greet) => console.log("Hello", name, ", Good", greet)
+greeting("Ketan", "Afternoon!")
 // you can also have blocks in it
 const greetings = (name, greet) => {
     console.log("Hello", name, ", Good", greet)
     greetings("Ketan", "Afternoon!")
 }
+
+// Arrays
+const friends = ["friend1", "friend2", "friend3"]
+console.log(friends)
