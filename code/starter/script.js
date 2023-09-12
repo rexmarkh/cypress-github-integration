@@ -13,10 +13,19 @@ console.log(num1);
 // arrow functions
 const sayHello = name => console.log("Hello", name);
 sayHello("Ketan")
-const greetings = (name, greet) => console.log("Hello", name, ", Good", greet)
-greetings("Ketan", "Afternoon!")
+const greeting = (name, greet) => console.log("Hello", name, ", Good", greet)
+greeting("Ketan", "Afternoon!")
 // you can also have blocks in it
 const greetings = (name, greet) => {
     console.log("Hello", name, ", Good", greet)
     greetings("Ketan", "Afternoon!")
 }
+
+// Arrays
+const friends = ["friend1", "friend2", "friend3"]
+console.log(friends)
+const teacher = new Array("Teacher1", "Teacher2", "Teacher3")
+console.log(teacher)
+// arrays are homogenerous
+const me = ["Ketan", 22, friends, teacher]
+console.log(me)
