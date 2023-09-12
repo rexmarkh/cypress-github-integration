@@ -24,3 +24,6 @@ const greetings = (name, greet) => {
 // Arrays
 const friends = ["friend1", "friend2", "friend3"]
 console.log(friends)
+// another way
+const teacher = new Array("Teacher1", "Teacher2", "Teacher3")
+console.log(teacher)
