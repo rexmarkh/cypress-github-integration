@@ -10,3 +10,8 @@ const num = function myNum() {
 }
 let num1 = num
 console.log(num1);
+// arrow functions
+const sayHello = name => console.log("Hello", name);
+sayHello("Ketan")
+const greetings = (name, greet) => console.log("Hello", name, ", Good", greet)
+greetings("Ketan", "Afternoon!")
