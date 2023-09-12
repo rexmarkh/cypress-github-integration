@@ -1,3 +1,4 @@
+'use strict'
 // function without a name is anonymous function
 // function call after declaration possible below
 printF();
