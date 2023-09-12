@@ -27,3 +27,6 @@ console.log(friends)
 // another way
 const teacher = new Array("Teacher1", "Teacher2", "Teacher3")
 console.log(teacher)
+// arrays are homogenerous
+const me = ["Ketan", 22, friends, teacher]
+console.log(me)
