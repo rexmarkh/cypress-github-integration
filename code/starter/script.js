@@ -15,3 +15,8 @@ const sayHello = name => console.log("Hello", name);
 sayHello("Ketan")
 const greetings = (name, greet) => console.log("Hello", name, ", Good", greet)
 greetings("Ketan", "Afternoon!")
+// you can also have blocks in it
+const greetings = (name, greet) => {
+    console.log("Hello", name, ", Good", greet)
+    greetings("Ketan", "Afternoon!")
+}
