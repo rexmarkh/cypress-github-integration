@@ -24,6 +24,10 @@ const greetings = (name, greet) => {
 // Arrays
 const friends = ["friend1", "friend2", "friend3"]
 console.log(friends)
+<<<<<<< HEAD
+=======
+// another way
+>>>>>>> f4192e328038c481a32d8c8da605e06b002f79d6
 const teacher = new Array("Teacher1", "Teacher2", "Teacher3")
 console.log(teacher)
 // arrays are homogenerous
