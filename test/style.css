@@ -1,0 +1,95 @@
+/* Reset some default browser styles */
+body,
+h1,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Basic styling for the entire page */
+body {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Styling for the task list */
+#task-list {
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.task .task-text {
+  flex-grow: 1;
+}
+
+/* Styling for the input and button */
+#add-task {
+  display: flex;
+  margin-top: 20px;
+}
+
+#new-task {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#add-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: #555;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  color: #777;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  main {
+    max-width: 90%;
+  }
+}
